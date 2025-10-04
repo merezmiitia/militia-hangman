@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#screen{
+    position: relative;
+    background-color: green;
+    height: 725px;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes blink{
+    50% {
+        opacity: 0;
+    }
+    80% {
+        opacity: .5;
+    }
+}
+#content {
+    text-align: center;
+    padding-top: 5%;
+    animation: blink 2s linear infinite;
+}
+#scan, 
+#bezel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+    #scan{
+        opacity: 65%;
+    }
+
+    .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+         supported by Chrome, Edge, Opera and Firefox */
+      }
+#content{
+    font-family: "VT323";
+    padding: 10px;
+    color: rgb(177, 253, 0);
+    font-size: 100px;
+    text-shadow: 1px 1px 2px rgb(150, 167, 124), 0 0 1em rgb(150, 167, 124),
+     0 0 0.2cm rgb(226, 255, 183)
+}
+
+@keyframes blink{
+    50% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: .5;
+    }
+}
+#content2 p {
+    text-align: center;
+    font-size: 40px;
+   
+}
+
+#content2 {
+    font-family: "VT323"; 
+    display: inline-block;
+    display: grid;
+    place-items: center;
+    color: rgb(177, 253, 0);
+    font-size: 50px;
+    text-shadow: 1px 1px 2px rgb(150, 167, 124), 0 0 1em rgb(150, 167, 124),
+     0 0 0.2cm rgb(226, 255, 183)
+}
+
+#content5 {
+    font-family: "VT323"; 
+    padding: none;
+    place-items: center;
+    color: rgb(177, 253, 0);
+    font-size: 10px;
+    text-shadow: 1px 1px 2px rgb(150, 167, 124), 0 0 1em rgb(150, 167, 124),
+     0 0 0.2cm rgb(226, 255, 183)
+}
+
+.spiderpic {
+   width: 120px;
+   position: relative;
+   left: 45%;
+   bottom: 10%;
+}
+
+.image2 {
+    width: 100px;
+    position:absolute;
+    left: 46%;
+    place-items: center;
+    bottom: 63%;
+}
+
+
+.content3 {
+    font-family: "VT323";
+    padding: 10px;
+    color: rgb(177, 253, 0);
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgb(150, 167, 124), 0 0 1em rgb(150, 167, 124),
+     0 0 0.2cm rgb(226, 255, 183)
+}
+
+body .entire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "VT323";
+
+}
+
+body .container{
+    margin: auto;
+    padding: 0 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 50vh;
+    
+        width: 50%;
+        gap: 70px;
+        padding: 10px;
+        background: #fff;
+        border-radius: 10px;
+        align-items: flex-end;
+        justify-content: space-between;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+
+/*finish off main page, what am i writing there?*/
+/*change 'militia' font size in responsive part so it doesnt overflow */
