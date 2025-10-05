@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
 }
 #screen{
-    position: relative;
+    position: auto;
     background-color: green;
     height: 725px;
 }
